@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	char show[45];
+	char show[54];
 	strcpy(show, "\"Programming is like building a multilingual puzzle\n");
 	puts(show);
 	return (0);
