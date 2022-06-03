@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 /**
  **main - Main function
  **Return: return 0 everytime
