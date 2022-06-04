@@ -2,7 +2,7 @@
 #include <ctype.h>
 
 /**
- **main - Prinint single digits of base 10
+ **main - Printing single digits of base 10
  ** n takes the value of each digit
  **Return: returns 0
 **/
