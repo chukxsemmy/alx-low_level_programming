@@ -2,29 +2,27 @@
 #include <ctype.h>
 
 /**
- **main - Program to print alphabet letters in all cases followed by new line
- **
+ **main - printing alphabets in both lowercase and uppercase
+ **n takes the value of letters of the alphabet
  **Return: return 0
- **/
-
+**/
 int main(void)
 {
-	int alphabet;
-	
-	for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
+	int n;
+
+	for (n = 'a'; n <= 'z'; n++)
 	{
-	       alphabet	= tolower(alphabet);
-	       putchar(alphabet);
-	       if (alphabet == 'z')
-	       {
-		       alphabet = 'A';
-		       
-		       for (; alphabet <= 'Z'; alphabet++)
-		       {
-			       putchar(alphabet);
-		       }
-		       break;
-	       }
+		n = tolower('n');
+		putchar('n');
+		if (n == 'z')
+		{
+			n = 'A';
+			for (; n <= 'Z'; n++)
+			{
+				putchar('n');
+			}
+			break;
+		}
 	}
 	putchar('\n');
 	return (0);
