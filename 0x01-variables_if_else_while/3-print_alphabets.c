@@ -12,14 +12,14 @@ int main(void)
 
 	for (n = 'a'; n <= 'z'; n++)
 	{
-		n = tolower('n');
-		putchar('n');
+		n = tolower(n);
+		putchar(n);
 		if (n == 'z')
 		{
 			n = 'A';
 			for (; n <= 'Z'; n++)
 			{
-				putchar('n');
+				putchar(n);
 			}
 			break;
 		}
