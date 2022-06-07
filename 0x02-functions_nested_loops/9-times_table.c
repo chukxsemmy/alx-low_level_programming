@@ -3,22 +3,22 @@
 /**
  *times_table - prints 9 times table starting from zero
  *Returns: 0
- *@times_table: takes the value of numbers
+ *@x: takes the value of numbers
  */
 
-void times_table(void times_table)
+void times_table(void x)
 {
-	int times_table, n;
+	int x, n;
 
-	for (times_table = 0; times_table <= 9; times_table++)
+	for (x = 0; x <= 9; x++)
 	{
 		for (n = 0; n <= 9; n++)
 		{
 			n = n * n;
 			_putchar(n)
 		}
-		times_table = times_table * times_table;
-		_putchar(times_table);
+		x = x * x;
+		_putchar(x);
 	}
 	return (0);
 }
