@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *main - prints the letters of the alphabets in small letters
+ *print_alphabet - prints the letters of the alphabets in small letters
  *
  *Retun: 10
 */
