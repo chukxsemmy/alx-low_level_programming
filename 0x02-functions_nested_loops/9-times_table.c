@@ -3,10 +3,10 @@
 /**
  *times_table - prints 9 times table starting from zero
  *Returns: 0
- *@n: takes the value of numbers
+ *@times_table: takes the value of numbers
  */
 
-void times_table(void n)
+void times_table(void times_table)
 {
 	int times_table, n;
 
