@@ -2,23 +2,32 @@
 
 /**
  *times_table - prints 9 times table starting from zero
- *Returns: 0
- *@x: takes the value of numbers
+ *Return: no return value
  */
 
-void times_table(void x)
+void times_table(void)
 {
-	int x, n;
+	int x, y, mul;
 
 	for (x = 0; x <= 9; x++)
 	{
-		for (n = 0; n <= 9; n++)
+		_putchar (0);
+		for (y = 1; y <= 9; y++)
 		{
-			n = n * n;
-			_putchar(n)
+			_putchar(',');
+			_putchar(' ');
+			mul = x * y;
+		while (mul <= 9)
+		{
+			_putchar (' ');
 		}
-		x = x * x;
-		_putchar(x);
+		else
+		{
+			_putchar((mul / 10) + '0');
+
+			_putchar((mul % 10) + '0');
+		}
+		}
+		_putchar('\n');
 	}
-	return (0);
 }
