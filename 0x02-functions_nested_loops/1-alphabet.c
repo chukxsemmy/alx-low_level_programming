@@ -6,7 +6,7 @@
  *Retun: 10
 */
 
-void small_alphabets(void)
+void print_alphabet(void)
 {
 	int n;
 
