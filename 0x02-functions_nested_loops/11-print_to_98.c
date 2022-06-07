@@ -2,23 +2,22 @@
 
 /**
  *print_to_98 - prints all natural numbers and prints 98 as last
- *Returns: 0
+ *Returns: none
  *@n: takes the value of number to be printed
  */
 
 void print_to_98(int n)
 {
-	for (n <= 0; n <= 98; n++)
+	if (n > 99)
 	{
-		_putchar(n);
-		_putchar(',');
-		_putchar(' ');
+		while (n > 98)
+			printf("%d, ", n--);
+		printf("%d\n", n);
 	}
-	for (n > 98; n--)
+	else
 	{
-		_putchar(n);
-		_putchar(',');
-		_putchar(' ');
+		while (n < 98)
+			printf("%d, ", n++);
+		printf("%d\n", n);
 	}
-	return (0);
 }
