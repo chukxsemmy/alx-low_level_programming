@@ -9,9 +9,9 @@ int main(void)
 	unsigned long x = 0, y = 1, z = 0;
 	unsigned long sumOfEven;
 
+	sumOfEven = 0;
 	while (z <= 4000000)
 	{
-		sumOfEven = 0;
 		z = x + y;
 		x = y;
 		y = z;
