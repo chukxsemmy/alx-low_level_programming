@@ -31,7 +31,7 @@ int main(void)
 			col2 %= 10000000000;
 		}
 		printf("%lu%lu", col1, col2);
-		if (inc != 98)
+		if (fib != 98)
 			printf(", ");
 
 		row1 = row3;
