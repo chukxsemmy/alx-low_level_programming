@@ -18,10 +18,10 @@ int main(void)
 		n2 = n3;
 	}
 	row1 = n1 / 10000000000;
-	row2 = n2 / 10000000000;
-	row3 = n1 % 10000000000;
+	row3 = n2 / 10000000000;
+	row2 = n1 % 10000000000;
 	row4 = n2 % 10000000000;
-	for (fib = 93; fib < 99; fib++)
+	for (fib = 93; fib <= 98; fib++)
 	{
 		col1 = row1 + row3;
 		col2 = row2 + row4;
