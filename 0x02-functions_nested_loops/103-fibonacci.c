@@ -11,7 +11,7 @@ int main(void)
 
 	while (z <= 4000000)
 	{
-		sumOfeven = 0;
+		sumOfEven = 0;
 		z = x + y;
 		x = y;
 		y = z;
