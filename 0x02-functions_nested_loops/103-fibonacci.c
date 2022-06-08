@@ -6,15 +6,18 @@
 
 int main(void)
 {
-	unsigned long n1 = 0, n2 = 1, n3 = 0, sumOfEven = 0;
+	unsigned long x = 0, y = 1, z = 0;
+	unsigned long sumOfEven;
+
 	while (n3 <= 4000000)
 	{
-		n3 = n1 + n2;
-		n1 = n2;
-		n2 = n3;
+		sumOfeven = 0;
+		z = x + y;
+		x = y;
+		y = z;
 
-		if ((n1 % 2) == 0)
-			sumOfEven += n1;
+		if ((x % 2) == 0)
+			sumOfEven += x;
 
 	}
 	printf("%ld\n", sumOfEven);
