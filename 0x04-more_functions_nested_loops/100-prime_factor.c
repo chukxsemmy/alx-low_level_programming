@@ -12,7 +12,7 @@ int main(void)
 	long num = 612852475143;
 	int n;
 
-	while (num > n / 2)
+	while (n++ < num / 2)
 	{
 		if (num % n == 0)
 		{
