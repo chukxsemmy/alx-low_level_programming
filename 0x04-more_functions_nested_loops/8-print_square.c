@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- *print_square - printing a square
- *@size: takes the size of the square
- *len: lenght of the square
- *wid: width of the square
- *Return: none
- */
+ **print_square - printing a square
+ **@size: takes the size of the square
+ **len: lenght of the square
+ **wid: width of the square
+ **Return: none
+ **/
 
 void print_square(int size)
 {
@@ -28,4 +28,4 @@ void print_square(int size)
 	{
 		_putchar('\n');
 	}
-}
+`}
