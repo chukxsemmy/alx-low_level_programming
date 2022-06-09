@@ -5,6 +5,7 @@
  **@n: The number to print
  **
  **/
+
 void print_number(int n)
 {
 	unsigned int n;
