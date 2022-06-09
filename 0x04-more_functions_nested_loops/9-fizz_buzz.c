@@ -11,7 +11,7 @@ int main(void)
 {
 	int n;
 
-	while (n++ < 100)
+	while (n++ <= 100)
 		if (n % 3 == 0)
 			printf("Fizz ");
 		else if (n % 5 == 0)
