@@ -3,33 +3,30 @@
 /**
  *print_triangle - printing a triangle
  *@size: takes the size of the trangle
- *hgt takes the height of the triangle
- *wid takes the width of the trangle
  *Return: 0
  */
 
 void print_triangle(int size)
 {
-	int hgt;
+	int a, b, c;
 
-	int wid;
-
-	int spaces;
-
-	for (hgt = 0; hgt < size; hgt++)
-	{
-		for (spaces = size - 1 - i; spaces > 0; spaces--)
-		{
-			_putchar(' ');
-		}
-		for (wid = 0; wid <= hgt; wid++)
-		{
-			_putchar('#');
-		}
-		_putchar('\n');
-	}
 	if (size <= 0)
 	{
 		_putchar('\n');
+	}
+	else
+	{
+		for (a = 0; a < size; a++)
+		{
+			for (b = size - a; b > 1; a++)
+			{
+				_putchar(32);
+			}
+			for (c = 0; c <= a; c++)
+			{
+				_putchar(35);
+			}
+			_putchar('\n');
+		}
 	}
 }
