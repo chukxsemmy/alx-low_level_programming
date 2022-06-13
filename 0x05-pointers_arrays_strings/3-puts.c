@@ -5,7 +5,7 @@
  *@str: takes the value of string
  */
 
-void _puts(char str)
+void _puts(char *str)
 {
 	while (*str)
 		_putchar(str++);
