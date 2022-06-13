@@ -8,8 +8,11 @@
 
 int _strlen(char *s)
 {
-	int count, inc;
-	inc = 0;
+	int n;
+
+	n = 0;
+	int count;
+
 	for (count = 0; s[count] != '\0'; count++)
 		inc++;
 
