@@ -17,7 +17,7 @@ int main(void)
 	sum = 2772;
 	val = 0;
 
-	while (a > 122)
+	while (sum > 122)
 	{
 		tmp = (rand() % 100);
 		printf("%c", tmp);
