@@ -17,7 +17,7 @@ int main(void)
 	{
 		b = rand() % 128;
 		a += b;
-		putchar(c);
+		putchar(b);
 	}
 	putchar(2772 - a);
 	return (0);
