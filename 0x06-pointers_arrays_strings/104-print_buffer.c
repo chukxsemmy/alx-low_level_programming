@@ -1,6 +1,7 @@
 #include "main.h"
+
 /**
- *print_buffer -  C function that prints the content of an
+ *print_buffer - C function that prints the content of an
  *inputted number of bytes from a buffer.
  *Prints 10 bytes per line.
  *Starts with the position of the first byte in hexadecimal (8 chars),
