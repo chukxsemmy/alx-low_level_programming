@@ -8,18 +8,12 @@
 
 void print_number(int n)
 {
-	int divisor = 1, i, resp;
-
 	if (n < 0)
 	{
 		_putchar('-');
-		n *= -1;
+		n = -n;
 	}
-	for (i = 0; n / divisor > 9; i++, divisor *= 10)
-		;
-	for (; divisor >= 1; n %= divisor, divisor /= 10)
-	{
-		resp = n / divisor;
-		_putchar('0' + resp);
-	}
+	if (n / 10)
+		print_number(n / 10);
+	_putchar('0' + n % 10);
 }
