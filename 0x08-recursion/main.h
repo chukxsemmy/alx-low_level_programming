@@ -1,3 +1,7 @@
+#ifndef MAIN_H
+#define MAIN_H
+
+#include <unistd.h>
 /**
  *prototypes
  */
@@ -16,3 +20,5 @@ int _sqrt(int n, int x);
 int is_prime(int n, int start);
 int find_strlen(char *s);
 int check_palindrome(char *s, int len, int index);
+
+#endif /* MAIN_H */
