@@ -40,8 +40,8 @@ int check_palindrome(int l, int r, char *p)
 
 int is_palindrome(char *s)
 {
-	int n;
+	int i;
 
-	n = _strlen(s) - 1;
-	return (check_palindrome(0, n, s));
+	i = _strlen(s) - 1;
+	return (check_palindrome(0, i, s));
 }
