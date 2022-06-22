@@ -54,7 +54,7 @@ int wildcmp(char *s1, char *s2)
 		return (wildcmp(s1, s2 + 1));
 	else if (*s2 == '*')
 	{
-		p = wildcard(s1, s2 + 1);
+		n = wildcard(s1, s2 + 1);
 		if (n == 0)
 			return (0);
 		return (wildcmp(n + 1, s2 + 2));
