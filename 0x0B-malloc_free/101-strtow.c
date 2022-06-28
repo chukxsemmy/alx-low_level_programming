@@ -67,7 +67,8 @@ int num_words(char *str)
 		{
 			ltr++;
 		}
-		else if (((str[ltr] == ' ') || (str[ltr] == '\0')) && ltr && (str[ltr - 1] != ' '))
+		else if (((str[ltr] == ' ') || (str[ltr] == '\0')) && ltr && 
+(str[ltr - 1] != ' '))
 		{
 			words += 1;
 			ltr++;
