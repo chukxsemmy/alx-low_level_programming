@@ -29,6 +29,7 @@ int find_len(char *str)
  * function exits with a status of 98.
  * Return: A pointer to the array.
  */
+
 char *create_xarray(int size)
 {
 	char *array;
@@ -93,7 +94,6 @@ void get_prod(char *prod, char *mult, int digit, int zeroes)
 
 	mult_len = find_len(mult) - 1;
 	mult += mult_len;
-
 	while (*prod)
 	{
 		*prod = 'x';
@@ -113,7 +113,6 @@ void get_prod(char *prod, char *mult, int digit, int zeroes)
 			printf("Error\n");
 			exit(98);
 		}
-
 		num = (*mult - '0') * digit;
 		num += tens;
 		*prod = (num % 10) + '0';
@@ -130,16 +129,15 @@ void get_prod(char *prod, char *mult, int digit, int zeroes)
  * @next_prod: The next product to be added.
  * @next_len: The length of next_prod.
  */
+
 void add_nums(char *final_prod, char *next_prod, int next_len)
 {
 	int num, tens = 0;
 
 	while (*(final_prod + 1))
 		final_prod++;
-
 	while (*(next_prod + 1))
 		next_prod++;
-
 	for (; *final_prod != 'x'; final_prod--)
 	{
 		num = (*final_prod - '0') + (*next_prod - '0');
@@ -172,6 +170,7 @@ void add_nums(char *final_prod, char *next_prod, int next_len)
  * contains non-digits, the function exits with a status of 98.
  * Return: Always 0.
  */
+
 int main(int argc, char *argv[])
 {
 	char *final_prod, *next_prod;
