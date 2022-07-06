@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
  * main - prints opcode of own main function
- *
  * @argc: argument count
  * @argv: arg value
  * Return: int
