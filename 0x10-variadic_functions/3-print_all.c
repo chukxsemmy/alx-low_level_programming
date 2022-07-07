@@ -79,7 +79,7 @@ void print_all(const char * const format, ...)
 			if (*(format + b) == *(arguments[c]).format)
 			{
 				printf("%s", separator);
-				arguments[j].function(args);
+				arguments[c].function(args);
 				separator = ", ";
 
 			}
