@@ -60,6 +60,7 @@ void print_all(const char * const format, ...)
 	va_list args;
 	int b, c;
 	char *separator;
+
 	args_t arguments[] = {
 		{"c", char_print},
 		{"i", integer_print},
