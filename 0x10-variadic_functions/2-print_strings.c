@@ -1,5 +1,5 @@
 #include "variadic_functions.h"
-`
+
 /**
  * print_strings - printing strings
  *@separator: the number of parameters
