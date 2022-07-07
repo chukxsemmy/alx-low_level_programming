@@ -5,32 +5,39 @@
  * main - prints opcode of own main function
  * @argc: argument count
  * @argv: arg value
- * Return: int
+ * Return: 1 on success else 2
  */
 
 int main(int argc, char *argv[])
 {
-	int a, b;
-	unsigned char *c;
 
-	if (argc != 2)
-	{
-		printf("Error\n");
-		exit(1);
-	}
-	a = atoi(argv[1]);
-	if (a < 0)
-	{
-		printf("Error\n");
-		exit(2);
-	}
-	c = (unsigned char *)main;
-	b = 0;
-	if (a > 0)
-	{
-		while (b < (a - 1))
-			printf("%02hhx ", c[b++]);
-		printf("%hhx\n", c[b]);
-	}
-	return (0);
+int index, bytes;
+int (*adrs)(int, char **) = main;
+unsigned char opcode;
+
+if (argc != 2)
+{
+	printf("Error\n");
+	exit(1);
+}
+bytes = atoi(argv[1]);
+
+if (bytes < 0)
+{
+	printf("Error\n");
+	exit(2);
+}
+
+for (index = 0; index <  bytes; index++)
+{
+	opcode = *(unsigned char *)adrs;
+	printf("%.2x", opcode);
+
+	if (index == bytes - 1)
+		continue;
+	printf(" ");
+	adrs++;
+}
+printf("\n");
+return (0);
 }
