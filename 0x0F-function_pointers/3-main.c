@@ -9,29 +9,29 @@
  * Return: 0
  */
 
-int main(int __attribute__((__unused__)) argc, char *argv[])
+int main(int argc, char *argv[])
 {
-	int num1, num2;
-	char *cal;
+	int n1, n2, result;
+	int (*p)(int, int);
 
-	if (argc != 4)
+	if (argc < 4 || argc > 4)
 	{
 		printf("Error\n");
 		exit(98);
 	}
-	num1 = atoi(argv[1]);
-	cal = argv[2];
-	num2 = atoi(argv[3]);
-	if (get_op_func(cal) == NULL || cal[1] != '\0')
+
+	n1 = atoi(argv[1]);
+	n2 = atoi(argv[3]);
+
+	p = get_op_func(argv[2]);
+
+	if (p == NULL)
 	{
 		printf("Error\n");
 		exit(99);
 	}
-	if ((*cal == '/' && num2 == 0) || (*cal == '%' && num2 == 0))
-	{
-		printf("Error\n");
-		exit(100);
-	}
-	printf("%d\n", get_op_func(op)(num1, num2));
+	result = p(n1, n2);
+
+	printf("%d\n", result);
 	return (0);
 }
