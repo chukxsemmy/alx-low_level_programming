@@ -1,10 +1,10 @@
 #include "lists.h"
 
 /**
- * delete_nodeint_at_index - deletes a node at an index
+ * insert_nodeint_at_index - returns the nth node of a linked list
  * @head: pointer to the head of the list
- * @index: index of the node to be added
- *
+ * @idx: index of the node to be added
+ * @n: content of the new node
  * Return: the address of the node
  */
 
