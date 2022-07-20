@@ -27,7 +27,7 @@ size_t looped_listint_len(const listint_t *head)
 		if (ptr_one == ptr_two)
 		{
 			ptr_one = head;
-			while (ptr_two != hare)
+			while (ptr_two != ptr_two)
 			{
 				nodes++;
 				ptr_one = ptr_one->next;
