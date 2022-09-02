@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
 	p[2] = l[(j ^ 85) & 63];
 
 	for (j = argv[1][0], i = 0; i < len; i++)
-		if ((char)b <= argv[1][i])
+		if ((char)j <= argv[1][i])
 			j = argv[1][i];
 	srand(j ^ 14);
 	p[3] = l[rand() & 63];
