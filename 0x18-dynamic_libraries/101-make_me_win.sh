@@ -1,3 +1,3 @@
-#!/bin/bash 
-wget https://github.com/chukxsemmy/alx-low_level_programming/raw/master/0x18-dynamic_libraries/giga_inject.so -P ../
-export LD_PRELOAD =../giga_inject.so
+#!/bin/bash
+wget -O /tmp/giga_inject.so https://github.com/chukxsemmy/alx-low_level_programming/raw/master/0x18-dynamic_libraries/giga_inject.so
+export LD_PRELOAD =/tmp/giga_inject.so
